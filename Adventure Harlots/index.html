@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-----CSS LINK---->
+    <link rel="stylesheet" href="style.css">
+
+    <!---TITLE-->
+    <title>Welcome!</title>
+    <!----FONTAWSOME-->
+    <script src="https://kit.fontawesome.com/4d525ef45a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="scrollspy">
+    <!-----------------NAVIGATION------------->
+    <div class="navbar-fixed">
+        <nav class="light-blue darken-4">
+
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">AdventureHarlots</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#adventures">Adventures</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#find-us">Find Us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#adventures">Adventures</a>
+        </li>
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="#find-us">Find Us</a>
+        </li>
+    </ul>
+    <!-----------HOME:SLIDER----------->
+    <div id="home" class="slider scrollspy">
+        <ul class="slides">
+            <li>
+                <img src="http://lorempixel.com/580/250/nature/1" alt=""> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>Welcome</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Lorem ipsum dolor sit amet.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="http://lorempixel.com/580/250/nature/2" alt=""> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Adventure Harlots</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Lorem ipsum dolor sit amet.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="http://lorempixel.com/580/250/nature/3" alt=""> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Adventures</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Here's our small slogan.</h5>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-----ABOUT------>
+
+    <section id="about" class="section section-about scrollspy">
+        <div class="container">
+            <h2 class="center"><span class="blue-text">About</h2></span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ducimus nesciunt ut natus inventore
+                saepe repudiandae molestiae velit aperiam magni. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quas, eos. Fugiat, animi odit. Ab quas rem aut mollitia in nam porro tempore numquam amet a
+                reprehenderit aspernatur est natus excepturi laboriosam totam, culpa maiores atque veritatis deserunt
+                omnis maxime esse?</p>
+        </div>
+    </section>
+
+    <!------SECTION: THE TEAM----->
+    <section class="section section-team grey lighten-2">
+        <div class="container ">
+            <h2 class="center blue-text">The Team</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card horizontal hoverable ">
+                        <div class="card-image">
+                            <img src="https://miro.medium.com/fit/c/256/256/0*2D7XkqQGFjn-AgKS.">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <div class="card-heading center">
+                                    <h6>Fi</h6>
+                                </div>
+                                <p>I am a very simple card. I am good at containing small bits of information. lore</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="card horizontal hoverable ">
+                        <div class="card-image">
+                            <img
+                                src="data:image/jpeg;base64,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">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <div class="card-heading center">
+                                    <h6>Shirl</h6>
+                                </div>
+                                <p>I am a very simple card. I am good at containing small bits of information. lorem</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--------SECTION:ADVENTURES-------->
+
+    <section id="adventures" class="section section-adventures scrollspy">
+        <h2 class="center blue-text">Adventures</h2>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/580/250/nature/3" alt="" />
+                        <span class="card-title">Adventure1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi! Adipisci maiores
+                            ab natus in neque deserunt aut mollitia laboriosam facere, odit placeat debitis eius
+                            architecto, fugit provident maxime. Earum fugit exercitationem vitae veniam voluptatibus
+                            mollitia corrupti accusamus repellendus quod. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem itaque error architecto facilis perferendis dignissimos, id quidem
+                            totam, omnis repellendus suscipit modi reprehenderit placeat provident adipisci? Sint labore
+                            vel voluptates.lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consectetur, odit minima. Quasi quae vel commodi quo vero enim illum dolore reprehenderit
+                            rem officiis autem assumenda ex omnis esse officia libero, atque debitis optio corporis
+                            veritatis expedita? Dolorum quasi accusamus omnis voluptatem minus, illo repudiandae
+                            consequuntur harum dolor quaerat? Aliquid, laborum. </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/580/250/nature/1" alt="" />
+                        <span class="card-title">Adventure2</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi! Adipisci maiores
+                            ab natus in neque deserunt aut mollitia laboriosam facere, odit placeat debitis eius
+                            architecto, fugit provident maxime. Earum fugit exercitationem vitae veniam voluptatibus
+                            mollitia corrupti accusamus repellendus quod. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem itaque error architecto facilis perferendis dignissimos, id quidem
+                            totam, omnis repellendus suscipit modi reprehenderit placeat provident adipisci? Sint labore
+                            vel voluptates.lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consectetur, odit minima. Quasi quae vel commodi quo vero enim illum dolore reprehenderit
+                            rem officiis autem assumenda ex omnis esse officia libero, atque debitis optio corporis
+                            veritatis expedita? Dolorum quasi accusamus omnis voluptatem minus, illo repudiandae
+                            consequuntur harum dolor quaerat? Aliquid, laborum. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/580/250/nature/3" alt="" />
+                        <span class="card-title">Adventure3</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi! Adipisci maiores
+                            ab natus in neque deserunt aut mollitia laboriosam facere, odit placeat debitis eius
+                            architecto, fugit provident maxime. Earum fugit exercitationem vitae veniam voluptatibus
+                            mollitia corrupti accusamus repellendus quod. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem itaque error architecto facilis perferendis dignissimos, id quidem
+                            totam, omnis repellendus suscipit modi reprehenderit placeat provident adipisci? Sint labore
+                            vel voluptates.lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consectetur, odit minima. Quasi quae vel commodi quo vero enim illum dolore reprehenderit
+                            rem officiis autem assumenda ex omnis esse officia libero, atque debitis optio corporis
+                            veritatis expedita? Dolorum quasi accusamus omnis voluptatem minus, illo repudiandae
+                            consequuntur harum dolor quaerat? Aliquid, laborum. </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/580/250/nature/1" alt="" />
+                        <span class="card-title">Adventure4</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi! Adipisci maiores
+                            ab natus in neque deserunt aut mollitia laboriosam facere, odit placeat debitis eius
+                            architecto, fugit provident maxime. Earum fugit exercitationem vitae veniam voluptatibus
+                            mollitia corrupti accusamus repellendus quod. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem itaque error architecto facilis perferendis dignissimos, id quidem
+                            totam, omnis repellendus suscipit modi reprehenderit placeat provident adipisci? Sint labore
+                            vel voluptates.lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consectetur, odit minima. Quasi quae vel commodi quo vero enim illum dolore reprehenderit
+                            rem officiis autem assumenda ex omnis esse officia libero, atque debitis optio corporis
+                            veritatis expedita? Dolorum quasi accusamus omnis voluptatem minus, illo repudiandae
+                            consequuntur harum dolor quaerat? Aliquid, laborum. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/580/250/nature/3" alt="" />
+                        <span class="card-title">Adventure5</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi! Adipisci maiores
+                            ab natus in neque deserunt aut mollitia laboriosam facere, odit placeat debitis eius
+                            architecto, fugit provident maxime. Earum fugit exercitationem vitae veniam voluptatibus
+                            mollitia corrupti accusamus repellendus quod. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem itaque error architecto facilis perferendis dignissimos, id quidem
+                            totam, omnis repellendus suscipit modi reprehenderit placeat provident adipisci? Sint labore
+                            vel voluptates.lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consectetur, odit minima. Quasi quae vel commodi quo vero enim illum dolore reprehenderit
+                            rem officiis autem assumenda ex omnis esse officia libero, atque debitis optio corporis
+                            veritatis expedita? Dolorum quasi accusamus omnis voluptatem minus, illo repudiandae
+                            consequuntur harum dolor quaerat? Aliquid, laborum. </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/580/250/nature/1" alt="" />
+                        <span class="card-title">Adventure6</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nisi! Adipisci maiores
+                            ab natus in neque deserunt aut mollitia laboriosam facere, odit placeat debitis eius
+                            architecto, fugit provident maxime. Earum fugit exercitationem vitae veniam voluptatibus
+                            mollitia corrupti accusamus repellendus quod. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem itaque error architecto facilis perferendis dignissimos, id quidem
+                            totam, omnis repellendus suscipit modi reprehenderit placeat provident adipisci? Sint labore
+                            vel voluptates.lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consectetur, odit minima. Quasi quae vel commodi quo vero enim illum dolore reprehenderit
+                            rem officiis autem assumenda ex omnis esse officia libero, atque debitis optio corporis
+                            veritatis expedita? Dolorum quasi accusamus omnis voluptatem minus, illo repudiandae
+                            consequuntur harum dolor quaerat? Aliquid, laborum. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-----GALLERY----->
+    <section id="gallery" class="section section-gallery scrollspy grey lighten-2">
+        <div class="container">
+            <h4 class="center">
+                <span class="blue-text">Photo</span>Gallery
+            </h4>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://picsum.photos/300/400" alt="" class="materialboxed responsive-img">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------SECTION:FIND US------>
+    <section id="find-us" class="section section-find-us scrollspy light-blue darken-4">
+        <div class="container center white-text">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Find Us Below!</h4>
+                    <p>Follow our adventures!</p>
+                    <a class="white-text" href="https://www.instagram.com/adventureharlots/" target="_blank">
+                        <i class="fab fa-instagram-square fa-4x"></i>
+                    </a>
+                    <a class="white-text" href="https://twitter.com/Adventureharlo1 " target="_blank">
+                        <i class="fab fa-twitter-square fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+            <p>Adventure Harlots &copy;2020</p>
+        </div>
+    </section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        //NAVIGATION
+
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        //SLIDER
+
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+
+            indicators: false,
+            height: 600,
+            duration: 500,
+            interval: 4000,
+        });
+
+        //Scrollspy
+
+        scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {});
+
+
+        //MATERIALBOX
+        const mb = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(mb, {});
+    </script>
+
+
+
+
+</body>
+
+</html>
